@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    @include font-roboto;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: $white;
+    background-color: #08020d;
+}
+    
+    h1 {
+    @include bold;
+    @include uppercase;
+    font-size: 60px;
+    line-height: 90px;
+    margin: 0;
+
+}
+    
+h2 {
+    @include bold;
+    @include uppercase;
+    font-size: 38px;
+    line-height: 57px;
+    margin: 0;
+}
+
+h3 {
+    @include uppercase;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
+
+}
+    
+@media (max-width: 630px) {
+    h1 {
+        @include bold;
+        @include uppercase;
+        font-size: 30px;
+        line-height: 45px;
+        margin: 0;
+ 
+    }
+    
+    h2 {
+        @include bold;
+        @include uppercase;
+        font-size: 18px;
+        line-height: 27px;    
+        margin: 0;
+
+    }
+}
+
+.sr-only {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+  
+    white-space: nowrap;
+  }

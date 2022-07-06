@@ -1,0 +1,46 @@
+// === Mixins ===
+
+@mixin font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin font-roboto-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+@mixin bold {
+    font-weight: bold;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin gap-24px {
+    gap: 0 24px;
+}
+
+@mixin br-5px {
+    border-radius: 5px;
+}
+
+@mixin border {
+    border: 1px solid #FFFFFF;
+}
+
+@mixin img-to-parent-box {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+@mixin add-bg-to-pricing-section($bg-name) {
+    &.bg-#{$bg-name} {
+        background-image: url('../../images/#{$bg-name}.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+// === /Mixins ===

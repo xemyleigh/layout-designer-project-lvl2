@@ -1,0 +1,83 @@
+.latest-news {
+    h2 {
+        text-align: center;
+    }
+    margin-top: 100px;
+    .news-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        gap: 65px;
+        .reverse {
+            flex-direction: row-reverse;
+        }
+        &-item {
+            display: flex;
+            gap: 0 50px;
+            color: $dark-gray;
+
+            &-description {
+                h3 {
+                    text-transform: capitalize;
+                    font-size: 30px;
+                    line-height: 1.5em;
+                    color: $white;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 1.5em;
+                    margin-bottom: 25px;
+                }
+
+                .news-author {
+                    display: flex;
+                    gap: 16px;
+                    font-size: 12px;
+                    margin-bottom: 48px;
+
+                    .author-nickname {
+                        text-transform: uppercase;
+                        color: $orange;
+                    }
+
+                    .date {
+                        color: $dark-gray;
+                    }
+                }
+
+                a {
+                    display: block;
+                    max-width: 135px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-align: center;
+                    color: $dark-gray;
+                    font-size: 12px;
+                    line-height: 19.2px;
+                    border-radius: 5px;
+                    width: 100%;
+                    color: $white;
+                    border: 1px solid $dark-gray;
+                    padding: 16px 30px;
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 760px) {
+    .latest-news {
+        padding: 0 20px;
+
+        .news-box,  {
+            &-item, .reverse {
+                flex-direction: column;
+                gap: 50px;
+            }
+        }
+    }
+}

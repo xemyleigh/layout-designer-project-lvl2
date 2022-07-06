@@ -1,0 +1,28 @@
+{
+  "name": "layout-designer-project-lvl2",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/xemyleigh/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/xemyleigh/layout-designer-project-lvl2/actions)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xemyleigh/layout-designer-project-lvl2.git"
+  },
+  "author": "xemyleigh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xemyleigh/layout-designer-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/xemyleigh/layout-designer-project-lvl2#readme",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^14.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.1.0"
+  }
+}
