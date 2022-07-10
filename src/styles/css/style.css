@@ -112,6 +112,10 @@ p, ul {
   padding: 0;
   gap: 0 24px;
 }
+.header-nav ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
 .header-search {
   margin-left: auto;
   width: 248px;
@@ -487,6 +491,203 @@ footer .bottom-part {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+.page-description {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.page-description::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url("../../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+.page-description-content .subscribers {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+.page-description-content-btns {
+  display: flex;
+  gap: 1.5rem;
+}
+.page-description-content-btns .bg-purple {
+  background-color: #5328A1;
+}
+.page-description-content-btns .bg-orange {
+  background-color: #95390C;
+}
+.page-description-content-btns a {
+  border-radius: 5px;
+  width: 200px;
+  padding: 20px 30px;
+  font-size: 12.8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.page-description-content-btns a img {
+  width: 20px;
+  filter: invert(1);
+  margin-right: 16px;
+}
+.page-description-content-btns a p {
+  display: inline;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .page-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-description .page-description-content-btns {
+    flex-direction: column;
+  }
+}
+.content {
+  padding-top: 100px;
+}
+.content h2 {
+  margin-bottom: 48px;
+}
+.content .tracks {
+  display: flex;
+  gap: 25px 50px;
+  flex-wrap: wrap;
+}
+.content .tracks .track {
+  display: flex;
+  width: 575px;
+  min-width: 300px;
+  gap: 15px;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.content .tracks .track img {
+  width: 55px;
+}
+.content .tracks .track-info {
+  font-size: 12.8px;
+  line-height: 1.5em;
+}
+.content .tracks .track-info .track-name {
+  font-weight: bold;
+  font-size: 12.8px;
+  line-height: 1.5em;
+}
+.content .tracks .track-info .artist-name {
+  color: #E0E0E0;
+}
+.content .tracks .track p {
+  margin-left: auto;
+  font-size: 12.8px;
+  line-height: 1.5em;
+  color: #E0E0E0;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.page-discography .content {
+  padding-top: 100px;
+}
+.page-discography .content h2 {
+  margin-bottom: 48px;
+}
+.page-discography .content .disks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 50px;
+}
+.page-discography .content .disks .discography-item {
+  width: 250px;
+}
+.page-discography .content .disks .discography-item .discography-info {
+  margin-top: 18px;
+}
+.page-discography .content .disks .discography-item .discography-info .track-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-transform: capitalize;
+}
+.page-discography .content .disks .discography-item .discography-info .year {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #E0E0E0;
+}
+
+@media (max-width: 600px) {
+  .page-discography .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-discography .content .disks .discography-item {
+    width: 137px;
+  }
+  .page-discography .content .disks .discography-item img {
+    width: 137px;
+  }
+}
+.page-similar .content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-similar .content h2 {
+  margin-bottom: 48px;
+}
+.page-similar .content .similar-artists {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 50px;
+}
+.page-similar .content .similar-artists .similar-item {
+  width: 250px;
+}
+.page-similar .content .similar-artists .similar-item img {
+  margin-bottom: 17px;
+}
+.page-similar .content .similar-artists .similar-item .similar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-similar .content .similar-artists .similar-item .similar-info .group-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-transform: capitalize;
+}
+.page-similar .content .similar-artists .similar-item .similar-info .fans-amount {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #E0E0E0;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .page-similar .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-similar .content .similar-artists .similar-item {
+    width: 137px;
+  }
+  .page-similar .content .similar-artists .similar-item img {
+    width: 137px;
   }
 }
 

@@ -1,0 +1,59 @@
+.page-discography {
+    .content {
+        padding-top: 100px;
+
+        h2 {
+            margin-bottom: 48px;
+        }
+
+        .disks {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px 50px;
+
+            .discography-item {
+                width: 250px;
+
+                .discography-info {
+                    margin-top: 18px;
+
+                    .track-name {
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 1.5em;
+                        text-transform: capitalize;
+                        // word-wrap: break-word;
+
+                    }
+
+                    .year {
+                        font-size: 16px;
+                        line-height: 1.5em;
+                        font-weight: 400;
+                        color: $footer-text-color;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .page-discography {
+        .content {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .disks {
+                .discography-item {
+                    width: 137px;
+
+                    img {
+                        width: 137px;
+                    }
+                }
+            }
+        }
+    }
+}
